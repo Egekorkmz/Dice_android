@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
                 Random rand = new Random();
 
                 for(int i = 1; i <= num_roll.getValue(); i++){
-                    num = rand.nextInt(num_face.getValue()-1)+1;
+                    num = rand.nextInt(num_face.getValue())+1;
                     sum += num;
                     if(i % 2 != 0){
                         str1 += i + ". roll --> " + num + "\n";
